@@ -34,7 +34,24 @@ This will compile your project and create the jar you defined in the pom.xml fil
 This is a maven application and there are plenty of ways to run a maven application. Since this is a Spring Boot application, it doesn't need a seperate server to run. If you need more information, please check https://projects.spring.io/spring-boot/ and "Features" section.
 
 (These are the same instructions of `ensembl-elastic-rest-final` project since both projects use same architecture and technologies : https://github.com/chanakaDe/ensembl-elastic-rest-final)
-`
+
+### Database Configuration and Introduction to codebase
+
+This application mainly access 2 database instances same time. So apart from the standard Spring Boot database configuration, this application is custom build to accesss 2 MySQL databases at the same time.
+
+And inside the project, there are two main sections.
+
+1. Data Recieve 
+2. Data Convert
+
+In this URL(https://github.com/chanakaDe/ensembl-db-convert/tree/master/src/main/java/com/db) there are two files named `ConverterDbConfig.java` and `ReceiveDbConfig.java` which are related to packages named under `convert` and `receive`. The main advantage of this two sections is it's easy to understand the code base, and also easy to develop seperately and also easy to debug according to the section we are developing. 
+
+#### How to change database credentials of two database instanses.
+
+All the database configurations are added in the standard `application.properties` file. You can get that from here : 
+
+https://github.com/chanakaDe/ensembl-db-convert/blob/master/src/main/resources/application.properties
+
 
 
 
