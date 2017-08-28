@@ -52,6 +52,26 @@ All the database configurations are added in the standard `application.propertie
 
 https://github.com/chanakaDe/ensembl-db-convert/blob/master/src/main/resources/application.properties
 
+##### How to change data recieving database credentials :
+
+```
+spring.datasourcetwo.url=jdbc:mysql://ensembldb.ensembl.org:3306/homo_sapiens_core_89_38
+spring.datasourcetwo.username=anonymous
+spring.datasourcetwo.password=
+```
+These are the main values you need to change : host , username and password. Since this is a open database, no specific username or password. If you need to add database with username and password, you need to fill those values.
+
+##### How to change data saving new database credentials :
+
+```
+spring.datasourceone.url=jdbc:mysql://138.197.117.104:3306/ensembl_new
+spring.datasourceone.username=root
+spring.datasourceone.password=AthulaErpUtrip1
+```
+If you need to chnage new data saving database, you need to change these values.
+
+### How to run the application
+
 
 
 
