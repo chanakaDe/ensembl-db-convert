@@ -89,20 +89,13 @@ java -jar DBConvert-0.0.1-SNAPSHOT.jar
 
 At the beginning of the application, you can see this Spring logo is appeared on the terminal window. 
 
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v1.5.3.RELEASE)
 
-`
 And sometimes you may get the following warning message because we are trying to connect to a non SSL database using our Spring application. It will appear continuously and will automatically goes to next step of the application.
 
 `Mon Aug 28 18:33:04 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.`
 
 After all the database conversions done, you can see following message in the terminal.
+
 `------------------------  end db convert ------------------------`
 
 It mean application has converted all the available data transactions properly and now you can stop the application.
