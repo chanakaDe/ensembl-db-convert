@@ -66,7 +66,7 @@ These are the main values you need to change : host , username and password. Sin
 ```
 spring.datasourceone.url=jdbc:mysql://138.197.117.104:3306/ensembl_new
 spring.datasourceone.username=root
-spring.datasourceone.password=AthulaErpUtrip1
+spring.datasourceone.password=**********
 ```
 If you need to chnage new data saving database, you need to change these values.
 
